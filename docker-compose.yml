@@ -1,0 +1,8 @@
+services:
+      api:
+        build: 
+          context: .
+          dockerfile: ./build/Dockerfile
+        ports:
+          - "9234:9234"
+        command: server
